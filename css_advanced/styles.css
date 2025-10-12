@@ -619,3 +619,62 @@ header nav ul li a:hover {
   height: 30px;
   background-color: #0b1220;
 } */
+
+
+
+
+/* ======================
+   Footer Section Styling
+   ====================== */
+
+footer {
+  background-color: #071629; /* Dark navy background */
+  color: white;
+  padding: 40px 80px;
+  font-family: Arial, sans-serif;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer section div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer img {
+  width: 150px; /* adjust to your logo size */
+}
+
+footer div i {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+footer div i:hover {
+  color: #b3b3b3;
+}
+
+footer p {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  footer section div {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
