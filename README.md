@@ -154,6 +154,7 @@ FAQ grid layout.
 Footer with social media icons.
 
 
+
 ✅ index.html
 <!DOCTYPE html>
 <html lang="en">
@@ -240,6 +241,99 @@ alx_html_css/
         ├── nannie-lawrence.jpg
         ├── bruce-walters.jpg
         └── henry-hughes.jpg
+
+
+# 🎓 Educational Tutorials Website
+
+A modern, responsive, and elegant website built with **HTML5**, **CSS3**, and **JavaScript** — designed for an educational platform offering tutorials, membership benefits, and an interactive FAQ section.
+
+---
+
+## 🚀 Features
+
+### 🏆 Most Popular Tutorials
+A clean and dynamic tutorial section displaying top video tutorials with:
+- Course thumbnail images  
+- Author details  
+- Star ratings  
+- Duration tags  
+- Hover effects and smooth animations  
+
+### 💜 Free Membership
+A beautifully styled dark-themed section that encourages users to register for free:
+- Four feature cards with glowing icons  
+- Modern purple gradient button  
+- Fully responsive layout  
+
+### 💬 F.A.Q. Section
+An interactive **accordion-based FAQ** section:
+- Smooth open/close animations  
+- Auto-close feature for other questions  
+- Minimal and elegant typography  
+- Responsive grid layout  
+
+---
+
+## 🧱 Folder Structure
+
+
+
+project-root/
+│
+├── index.html
+├── styles.css
+└── images/
+├── Diagonal-Smile.png
+├── Natural-Smile.png
+├── Happy-Smile.png
+├── Sad-Smile.png
+├── smile.svg
+└── play.png
+
+
+
+
+
+# SmileSchool Footer
+
+A simple and elegant footer section designed to match the **SmileSchool** branding.  
+This footer includes a logo, social media icons, and a copyright notice, styled with a modern dark theme.
+
+---
+
+## 🧩 Features
+
+- Dark navy background with centered layout  
+- Left-aligned logo and right-aligned social icons  
+- Responsive design for mobile devices  
+- Font Awesome icons for social links  
+- Clean, minimalist typography  
+
+---
+
+## 📸 Preview
+
+![Footer Preview](./images/footer-preview.png)
+
+---
+
+## 🧱 HTML Structure
+
+```html
+<footer>
+  <section>
+    <div>
+      <img src="./images/logo.png" alt="logo">
+      <div>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+    <p>©smileschool 2020</p>
+  </section>
+</footer>
+
 
 
 
