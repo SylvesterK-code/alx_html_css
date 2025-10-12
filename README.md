@@ -105,6 +105,141 @@ Copy code
 
 
 
+## 🧾 Task 1 — Import the Style
+Before implementing any styles, a new CSS file was created and imported into the project.
+
+### ✅ Steps Completed:
+1. **Created the CSS file:**
+   ```bash
+   touch styles.css
+Linked the CSS file in index.html:
+
+html
+Copy code
+<link rel="stylesheet" href="styles.css">
+Verified the import by testing a simple rule:
+
+css
+Copy code
+body {
+  background-color: lightgray;
+}
+✅ Verification:
+The CSS file loads correctly in the browser.
+
+The background color changes when testing, confirming a successful import.
+
+🧰 Technologies Used
+HTML5 — Semantic markup and structure.
+
+CSS3 — Styling, layout, and responsiveness.
+
+Font Awesome — Icons and symbols.
+
+Google Fonts — Typography (Source Sans Pro, Spin Cycle OT).
+
+💡 Features to Implement
+Responsive header and navigation bar.
+
+Hero section with headline and call-to-action button.
+
+Instructor profiles using Flexbox.
+
+Testimonial and tutorial card layouts.
+
+Free membership section with icons.
+
+FAQ grid layout.
+
+Footer with social media icons.
+
+
+✅ index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>SmileSchool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================
+       HEADER SECTION
+  ========================== -->
+  <header>
+    <a href="#" class="logo">SmileSchool</a>
+    <nav>
+      <ul>
+        <li><a href="#">COURSES</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">LOGIN</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =========================
+       HERO / BANNER SECTION
+  ========================== -->
+  <section class="hero" style="background-image: url('images/banner-bg.jpg');">
+    <div class="hero-content">
+      <h1>Get schooled</h1>
+      <div class="tagline">
+        <span>SMILES</span>
+        <span>GRIN</span>
+        <span>LAUGH</span>
+      </div>
+      <button class="cta">REGISTER FOR FREE</button>
+    </div>
+
+    <!-- =========================
+         "LEARN FROM THE PROS"
+    ========================== -->
+    <div class="learn">
+      <h2>Learn from the pros</h2>
+      <div class="pros">
+        <div class="pro">
+          <img src="images/phillip-massey.jpg" alt="Phillip Massey">
+          <h3>Phillip Massey</h3>
+          <p>&laquo; Smile of the year &raquo; 2018 - 2019</p>
+        </div>
+        <div class="pro">
+          <img src="images/nannie-lawrence.jpg" alt="Nannie Lawrence">
+          <h3>Nannie Lawrence</h3>
+          <p>&laquo; Best little smile &raquo; 2017</p>
+        </div>
+        <div class="pro">
+          <img src="images/bruce-walters.jpg" alt="Bruce Walters">
+          <h3>Bruce Walters</h3>
+          <p>&laquo; Best friend smile &raquo; live performance 2019</p>
+        </div>
+        <div class="pro">
+          <img src="images/henry-hughes.jpg" alt="Henry Hughes">
+          <h3>Henry Hughes</h3>
+          <p>&laquo; 24h smiles &raquo; winner 2016 - 2019</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
+🖼️ Folder Structure
+
+Make sure your folder looks like this:
+
+alx_html_css/
+└── css_advanced/
+    ├── index.html
+    ├── styles.css
+    └── images/
+        ├── banner-bg.jpg
+        ├── phillip-massey.jpg
+        ├── nannie-lawrence.jpg
+        ├── bruce-walters.jpg
+        └── henry-hughes.jpg
 
 
 
