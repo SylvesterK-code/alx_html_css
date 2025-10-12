@@ -169,3 +169,65 @@ header nav ul li a:hover {
   color: #ccc;
   line-height: 1.4;
 }
+
+
+
+
+
+
+/* =============================
+   QUOTE SECTION STYLES
+   ============================= */
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 10%;
+  background-color: #800264; /* optional background */
+}
+
+.quote div:first-child img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote blockquote {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.quote h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.quote p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .quote{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quote div:first-child img {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
