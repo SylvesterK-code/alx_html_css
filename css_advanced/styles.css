@@ -465,3 +465,95 @@ header nav ul li a:hover {
     box-shadow: 0 0 10px rgba(166, 113, 255, 0.4);
   }
 }
+
+
+
+
+
+
+
+/* ===============================
+   Free Membership Section Styling
+   =============================== */
+
+.membership-section {
+  background-color: #0b1220; /* dark navy background */
+  color: #fff;
+  text-align: center;
+  padding: 80px 60px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title */
+.membership-section h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+.membership-section h2 span {
+  color: #a671ff; /* purple accent */
+}
+
+/* Membership cards container */
+.membership-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* Each membership feature */
+.membership-card {
+  max-width: 220px;
+}
+
+.membership-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  filter: brightness(0) saturate(100%) invert(67%) sepia(91%) saturate(6234%) hue-rotate(232deg) brightness(102%) contrast(102%);
+}
+
+.membership-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.membership-card p {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Register button */
+.register-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #a671ff, #d179ff);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 40px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  box-shadow: 0 0 20px rgba(166, 113, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background: linear-gradient(90deg, #b583ff, #e68aff);
+  box-shadow: 0 0 25px rgba(166, 113, 255, 0.6);
+  transform: translateY(-3px);
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+  .membership-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
