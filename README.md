@@ -101,3 +101,23 @@ Copy code
 - **CSS3** for layout, styling, and animations.
 - **Font Awesome** for icons.
 - **Google Fonts** (Source Sans Pro & Spin Cycle OT).
+
+
+
+
+
+
+
+
+🧑‍💻 Author
+
+Sylvester Kormla Nyadzinnor
+🎓 Front-End Developer (ALX Pro)
+💼 GitHub Profile
+
+🌍 Passionate about building clean, responsive, and accessible user interfaces.
+
+🪪 License
+
+This project is part of the ALX Software Engineering Program and follows its academic and collaboration guidelines.
+© SmileSchool Project — 2025.
