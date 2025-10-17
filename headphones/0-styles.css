@@ -127,12 +127,12 @@
 
 /* Mobile behaviour */
 @media (max-width:480px){
-.header-inner{padding:18px 0}
-.main-nav{display:none}
-.hero{min-height:520px}
-.hero-title{font-size:20px;padding:0 6px}
-.hero-sub{font-size:0.9rem}
-.hero-desc{padding:0 12px;font-size:0.9rem}
+    .header-inner{padding:18px 0}
+    .main-nav{display:none}
+    .hero{min-height:520px}
+    .hero-title{font-size:20px;padding:0 6px}
+    .hero-sub{font-size:0.9rem}
+    .hero-desc{padding:0 12px;font-size:0.9rem}
 }
 
 
