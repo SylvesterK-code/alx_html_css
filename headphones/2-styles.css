@@ -1,0 +1,108 @@
+@import url('1-styles.css');
+
+/* Our Results Section */
+.our-results {
+  background: url('images/headphones_hero_2.jpg') no-repeat center center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+.our-results::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(7, 20, 38, 0.6);
+}
+
+.our-results .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-desc-2 {
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+} */
+
+.circle {
+    /* border: 4px solid var(--accent); */
+    border: 4px solid rgba(7, 20, 38, 0);
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background-image: url('images/pentagone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.circle:hover,
+.circle:focus-within {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+.circle h3 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+  /* color: var(--accent); */
+  color: var(--white);
+}
+
+.circle p {
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .our-results {
+    padding: 60px 0;
+  }
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+  .circle h3 {
+    font-size: 1.4rem;
+  }
+}
