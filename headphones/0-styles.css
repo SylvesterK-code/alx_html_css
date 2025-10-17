@@ -1,0 +1,154 @@
+:root{
+    --bg-dark: #071426;
+    --accent: #FF6565;
+    --muted: #9aa3ad;
+    --max-width: 1000px;
+    --container-pad: 24px;
+    --white: #ffffff;
+}
+
+.container{
+    width:100%;
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding-left:var(--container-pad);
+    padding-right:var(--container-pad);
+}
+
+
+/* Header */
+.site-header{
+    position: absolute;
+    z-index:20;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:28px 0;
+}
+.logo{display:flex;
+    align-items:center;
+    gap:10px;text-decoration:none;
+    color:var(--white)
+}
+.logo-mark{
+    filter:drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35))
+}
+.brand{
+    font-weight:700;
+    letter-spacing:1px;
+    font-family: 'Spin Cycle OT';
+}
+
+
+.main-nav ul{
+    list-style:none;
+    margin:0;padding:0;
+    display:flex;
+    gap:24px;
+}
+.main-nav a{
+    color:rgba(255,255,255,0.9);
+    text-decoration:none;
+    font-size:0.9rem
+}
+.main-nav a:focus,.main-nav a:hover{
+    color:var(--accent);
+    outline-offset:3px
+}
+
+
+/* Hero */
+.hero{
+    min-height:640px;
+    display:flex;align-items:center;
+    justify-content:center;
+    position:relative;
+    color:var(--white);
+    background-image: url('images/headphones_hero_1.jpg'); 
+    background-size:cover;background-position:center center;
+}
+
+
+/* Dark radial overlay to mimic design */
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background: radial-gradient(circle at 50% 35%, rgba(7,20,38,0.65) 0%, rgba(7,20,38,0.1) 60%);
+}
+
+
+.hero-content{
+    position:relative; 
+    text-align:center;
+    padding:80px 0 120px;
+    color:var(--white)
+}
+.hero-title{
+    margin:0;
+    font-size:28px;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight:700}
+.hero-sub{
+    margin:12px 0 26px;color:rgba(255,255,255,0.9);
+    font-weight:600
+}
+
+
+.primary-cta{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:28px;
+    background:var(--accent);
+    color:var(--white);
+    text-decoration:none;
+    font-weight:700;letter-spacing:0.6px;
+    margin-bottom:30px
+}
+.primary-cta:focus, .primary-cta:hover{
+    opacity:0.9
+}
+
+
+.hero-desc{
+    max-width:720px;
+    margin:24px auto 0;
+    color:rgba(255,255,255,0.75);
+    font-size:0.95rem
+}
+
+
+/* Mobile behaviour */
+@media (max-width:480px){
+.header-inner{padding:18px 0}
+.main-nav{display:none}
+.hero{min-height:520px}
+.hero-title{font-size:20px;padding:0 6px}
+.hero-sub{font-size:0.9rem}
+.hero-desc{padding:0 12px;font-size:0.9rem}
+}
+
+
+/* Accessibility helpers */
+a:focus{
+    outline:3px solid rgba(255,255,255,0.12);outline-offset:3px
+}
+
+
+/* Utility to ensure content area max width visually matches design */
+.container.hero-content{
+    max-width:var(--max-width)
+}
+
+
+/* small print: hover color for links per requirements */
+.main-nav a:hover{
+    color:var(--accent)
+}

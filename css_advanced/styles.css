@@ -27,6 +27,7 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
+  
 }
 
 header .logo {
@@ -59,7 +60,7 @@ header nav ul li a:hover {
 ================================= */
 .hero {
   position: relative;
-  background-image: url('./images/banner-bg.png'); /* Replace with your actual image path */
+  background-image: url('./images/banner-bg.png');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -645,7 +646,7 @@ footer section {
 footer section div {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   margin-bottom: 20px;
 }
