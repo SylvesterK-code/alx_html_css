@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Headphones — Our Results</title>
-  <link rel="stylesheet" href="2-styles.css">
+  <title>Headphones — Contact Us</title>
+  <link rel="stylesheet" href="3-styles.css">
   <link rel="stylesheet" href="holberton_school-icon/style.css">
 </head>
 <body>
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <a class="logo" href="#" aria-label="Headphones home">
-        <img src="./images/logo_headphones.png" alt="logo_SmileSchool">
-        <!-- <span class="brand">HEADPHONES</span> -->
+        <img src="./images/favicon.png" alt="logo_SmileSchool">
+        <span class="brand">HEADPHONES</span>
       </a>
 
       <nav class="main-nav" aria-label="Primary">
@@ -112,6 +112,40 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-us" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Contact us</h2>
+        <form class="contact-form" aria-label="Contact form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Name" required aria-required="true" />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email" required aria-required="true" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="btn submit-btn">CALL TO ACTION</button>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo">
+        <img src="./images/favicon.png" alt="logo_SmileSchool">
+        <span class="brand">HEADPHONES</span>
+      </a>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="holberton_school-icon-ic_facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="holberton_school-icon-ic_twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="holberton_school-icon-ic_instagram"></i></a>
+      </div>
+    </div>
+    <p class="copyright">© Headphones 2025</p>
+  </footer>
 </body>
 </html>

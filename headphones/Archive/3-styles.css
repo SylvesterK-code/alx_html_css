@@ -1,0 +1,405 @@
+:root {
+  --bg-dark: #071426;
+  --accent: #FF6565;
+  --muted: #9aa3ad;
+  --max-width: 1000px;
+  --container-pad: 24px;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--white);
+  background-color: var(--bg-dark);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--container-pad);
+  padding-right: var(--container-pad);
+}
+
+/* Header */
+.site-header {
+  position: absolute;
+  z-index: 20;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--white);
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'Spin Cycle OT';
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+.main-nav a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.main-nav a:hover,
+.main-nav a:focus {
+  color: var(--accent);
+  outline-offset: 3px;
+}
+
+/* Hero */
+.hero {
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--white);
+  background-image: url('images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 35%, rgba(7,20,38,0.65) 0%, rgba(7,20,38,0.1) 60%);
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  padding: 80px 0 120px;
+  color: var(--white);
+}
+.hero-title {
+  font-size: 28px;
+  font-weight: 700;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hero-sub {
+  margin: 12px 0 26px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+.primary-cta {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 28px;
+  background: var(--accent);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-bottom: 30px;
+}
+.primary-cta:hover,
+.primary-cta:focus {
+  opacity: 0.9;
+}
+.hero-desc {
+  max-width: 720px;
+  margin: 24px auto 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+}
+
+/* What We Do Section */
+.what-we-do {
+  background: #fff;
+  color: #222;
+  text-align: center;
+  padding: 100px 0;
+}
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.section-desc {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.what-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+}
+.what-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.what-icon {
+  font-size: 48px;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+.what-item h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.what-item p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .main-nav { display: none; }
+  .hero { min-height: 520px; }
+  .hero-title { font-size: 20px; padding: 0 6px; }
+  .hero-sub { font-size: 0.9rem; }
+  .hero-desc { padding: 0 12px; font-size: 0.9rem; }
+  .what-we-do { padding: 60px 0; }
+  .what-grid { gap: 30px; }
+}
+
+
+/* Our Results Section */
+.our-results {
+  background: url('images/headphones_hero_2.jpg') no-repeat center center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+.our-results::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(7, 20, 38, 0.6);
+}
+
+.our-results .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-desc-2 {
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+} */
+
+.circle {
+    /* border: 4px solid var(--accent); */
+    border: 4px solid rgba(7, 20, 38, 0);
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background-image: url('images/pentagone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.circle:hover,
+.circle:focus-within {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+.circle h3 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+  /* color: var(--accent); */
+  color: var(--white);
+}
+
+.circle p {
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .our-results {
+    padding: 60px 0;
+  }
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+  .circle h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* Contact Section */
+.contact-section {
+  background-color: var(--dark-bg);
+  color: var(--white);
+  text-align: center;
+  padding: 100px 0;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--white);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.05);
+  outline: none;
+}
+
+.contact-form .btn {
+  align-self: center;
+  width: 200px;
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #f05454;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background: #0b1624;
+  color: var(--white);
+  text-align: center;
+  padding: 40px 0;
+}
+
+.footer .footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer .socials a {
+  color: var(--white);
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.footer .socials a:hover {
+  color: var(--accent);
+}
+
+.footer .brand {
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.footer .copyright {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 60px 0;
+  }
+  .contact-form {
+    width: 90%;
+  }
+}
